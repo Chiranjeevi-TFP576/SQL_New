@@ -25,3 +25,8 @@ create table EmployeeTable
  -- for changing any header in table ,select name as 'Employee Name' from EmployeeTable
  select * from EmployeeTable
  select *from EmployeeTable where joinedDate between '2021-01-02'and Getdate()
+
+  --UC6 Add Gender
+ alter table EmployeeTable add Gender char(1)
+ update EmployeeTable set Gender='M' where Id in (1,2,3,4)
+ update EmployeeTable set Gender='F' where Id in (2)
