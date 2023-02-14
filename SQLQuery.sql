@@ -30,3 +30,9 @@ create table EmployeeTable
  alter table EmployeeTable add Gender char(1)
  update EmployeeTable set Gender='M' where Id in (1,2,3,4)
  update EmployeeTable set Gender='F' where Id in (2)
+
+ --UC7 average
+ select * from EmployeeTable
+ select Name,sum(salary) from EmployeeTable where id=1 or id=2 group by Name
+ select gender,Min(salary) from EmployeeTable  Group by gender
+ select gender,Avg(salary) from EmployeeTable  Group by gender
