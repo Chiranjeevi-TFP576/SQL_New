@@ -54,3 +54,7 @@ create table EmployeeTable
  Taxable_Pay money,
  Income_Tax money,
  Net_Pay money;
+
+ --UC10
+ insert into EmployeeTable values ('Chiranjeevi',25,22000,'2020-01-02','M',NULL,'India','IT_Department',NULL,NULL,NULL,NULL)
+ delete from EmployeeTable where id=6
