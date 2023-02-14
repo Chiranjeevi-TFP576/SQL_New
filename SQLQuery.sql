@@ -45,3 +45,12 @@ create table EmployeeTable
  Department varchar(50) not null default 'Defence';
  --Change Department as BasePay
  exec sp_rename 'EmployeeTable.Department','Basic_Pay'
+
+  --UC9//
+ select * from EmployeeTable
+
+ alter table EmployeeTable add
+ Detuction money,
+ Taxable_Pay money,
+ Income_Tax money,
+ Net_Pay money;
