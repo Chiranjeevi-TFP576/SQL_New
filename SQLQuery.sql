@@ -36,3 +36,12 @@ create table EmployeeTable
  select Name,sum(salary) from EmployeeTable where id=1 or id=2 group by Name
  select gender,Min(salary) from EmployeeTable  Group by gender
  select gender,Avg(salary) from EmployeeTable  Group by gender
+ --UC8 
+  select * from EmployeeTable
+
+ alter table EmployeeTable add 
+ Employee_Phone varchar (15),
+ Address varchar(300) not null default 'India',
+ Department varchar(50) not null default 'Defence';
+ --Change Department as BasePay
+ exec sp_rename 'EmployeeTable.Department','Basic_Pay'
