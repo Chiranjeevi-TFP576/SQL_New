@@ -11,5 +11,9 @@ create table EmployeeTable
  Salary decimal (18,2) default 1000,
  joinedDate datetime2(3) default GetDate(),-- getdate -> tilldate command
  )
+ --UC3//
+ insert into EmployeeTable values ('Chiranjeevi',25,22000,'2020-01-02')
+ insert into EmployeeTable values ('Ram',28,25000,'2021-05-02')
+ insert into EmployeeTable values ('Suresh',27,30000,'2022-02-16')
 
 
