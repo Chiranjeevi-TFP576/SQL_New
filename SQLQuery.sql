@@ -18,3 +18,10 @@ create table EmployeeTable
  --UC4//
  select *from EmployeeTable
 
+ --UC5//where -> to filter the records
+ select *from EmployeeTable where Age=25
+ update EmployeeTable set Name= 'Reventh' where id = 2
+ update EmployeeTable set Age = 24 where id =2
+ -- for changing any header in table ,select name as 'Employee Name' from EmployeeTable
+ select * from EmployeeTable
+ select *from EmployeeTable where joinedDate between '2021-01-02'and Getdate()
